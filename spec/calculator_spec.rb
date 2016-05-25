@@ -30,10 +30,12 @@ describe Output do
       calc = Calculations.new
       val = calc.add(2,3)
       expect(subject.print_answer(val)).to eq "The Answer is: 5"
-      expect(print_answer(6)).to eq "The Answer is: 6"
-      expect(print_answer(-1)).to eq "The Answer is: -1"
-      expect(print_answer(0)).to eq "The Answer is: 0"
-      expect(print_answer(Float::INFINITY)).to eq "The Answer is: Infinity"
+      val = calc.add(4,2)
+      expect(subject.print_answer(val)).to eq "The Answer is: 6"
+      val = calc.subtract(3,4)
+      expect(subject.print_answer(val)).to eq "The Answer is: -1"
+      val = calc.subtract(2,2)
+      expect(subject.print_answer(val)).to eq "The Answer is: 0"
     end
   end
 end
