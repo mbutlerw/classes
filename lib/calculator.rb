@@ -1,11 +1,14 @@
-def add(number_1, number_2)
-  number_1 + number_2
-end
+class Calculations
+    def add(number_1, number_2)
+    number_1 + number_2
+  end
 
-def subtract(number_1, number_2)
-  number_1 - number_2
+  def subtract(number_1, number_2)
+    number_1 - number_2
+  end
 end
-
-def print_answer(answer)
-  "The Answer is: #{ answer }"
+class Output
+  def print_answer(answer)
+    "The Answer is: #{ answer }"
+  end
 end
